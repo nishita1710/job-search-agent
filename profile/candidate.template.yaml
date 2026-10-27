@@ -1,0 +1,100 @@
+# Candidate profile template — copy to candidate.yaml and fill in.
+# candidate.yaml is git-ignored; only this template is committed.
+# Every stage (discover, qualify, prep, referral, apply, track) reads from this file.
+
+identity:
+  full_name: ""
+  email: ""
+  phone: ""                    # with country code
+  current_city: ""
+  links:
+    linkedin: ""
+    portfolio: ""
+    github: ""
+    personal_website: ""
+
+compensation:
+  currency: INR                # or USD, AED, etc.
+  current_ctc: 0               # in the unit below
+  current_fixed: 0
+  current_variable: 0
+  expected_ctc: 0
+  minimum_ctc: 0               # roles listing pay below this are dropped
+  unit: LPA                    # LPA, annual, monthly
+  disclose_current_ctc: true
+
+availability:
+  notice_period_days: 0
+  can_join_immediately: false
+  earliest_joining_date: null  # YYYY-MM-DD, if fixed
+
+work_authorization:
+  authorized_countries: []
+  requires_sponsorship_elsewhere: true
+  open_to_relocation: false
+  relocation_countries: []
+
+experience:
+  total_years: 0
+  domain_years: 0              # years in the target function (e.g. product, design, sales)
+  roles:                       # newest first; YYYY-MM dates
+    - company: ""
+      title: ""
+      start: ""
+      end: present
+
+education:
+  - degree: ""
+    institute: ""
+    year: 0
+    score: ""                  # CGPA or percentage, as forms ask for it
+
+targeting:
+  titles_priority: []          # most wanted first
+  required_experience_band_years: [0, 0]
+  locations: []
+  work_mode: [onsite, hybrid, remote]
+  company_types: []            # e.g. MNC, Series D+, startup, all
+  domains_preferred: []
+  deal_breakers: []
+  max_posting_age_days: 30
+  dream_companies: []          # career pages checked directly
+
+documents:
+  master_resume: ""            # path or link
+  resume_variants: ""
+  story_bank: ""               # STAR stories the agent draws on
+  skills_map: ""               # skill → story → proof point
+  cover_letter_base: ""
+
+screening_answers:
+  reason_for_leaving: ""
+  career_summary_short: ""     # ~60 words
+  career_summary_long: ""      # ~130 words
+
+referrals:
+  priority: []                 # schools first, then companies, in order
+  tone: polite and professional
+  wait_days_before_direct_apply: 4
+
+search:                        # read by the job-scout skill
+  firecrawl_pages: []          # optional paid scraping, e.g. Naukri / Instahyre listing URLs
+  firecrawl_max_calls_per_run: 4
+  site_search_portals:         # free site: searches, verified before keeping
+    - cutshort.io
+    - hirist.tech
+    - foundit.in
+    - in.indeed.com
+    - shine.com
+    - timesjobs.com
+    - glassdoor.co.in
+  browser_pages: []            # read-only pages opened in your signed-in browser (e.g. Wellfound, IIMJobs)
+  linkedin_max_searches: 5
+  linkedin_geo_ids: {}         # e.g. {Bengaluru: 105214831, India: 102713980, UAE: 104305776}
+  ats_feeds:                   # company slugs per ATS for target companies
+    greenhouse: []
+    lever: []
+    ashby: []
+    smartrecruiters: []
+  yc_role_slug: product-manager   # ycombinator.com/jobs/role/<slug>
+  alert_senders: []            # job-alert email senders to scan as a backup

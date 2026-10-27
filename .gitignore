@@ -1,0 +1,9 @@
+# Personal data never goes to GitHub
+profile/candidate.yaml
+profile/application-profile.md
+profile/story-bank.md
+profile/private/
+outputs/
+*.pdf
+*.docx
+.env
